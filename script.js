@@ -53,17 +53,17 @@ document.querySelector("#searchButton").addEventListener("click", () => {
       let { results } = data;
       results.forEach((element) => {
         cardsHtml += `<div class="card">
-            <div class="card-caption"><a href="${element.url}">${
-          element.title
-        }</a></div>
+            <div class="card-caption"><a target="_blank" href="${
+              element.url
+            }">${element.title}</a></div>
             <div class="card-image">
-              <a href="${element.url}"><img
+              <a  target="_blank" href="${element.url}"><img
                 src="${element.image_url}"
                 alt="Fate kaleid liner Prisma"
               /></a>
             </div>
             <div class="card-description">
-              <p>Start Date:${new Date(element.start_date).getTime()}</p>
+              <p>Start Date:${new Date(element.start_date)}</p>
               <p>End Date:${new Date(element.end_date)}</p>
               <p>Score:${element.score}</p>
               <p>Type:${element.type}</p>
