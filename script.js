@@ -1,5 +1,5 @@
 console.log("******************");
-console.log("Welcome AnimeList");
+console.log("Welcome to AnimeListing");
 console.log("******************");
 
 document.body.innerHTML = `<div class="container">
