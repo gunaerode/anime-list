@@ -52,18 +52,20 @@ document.querySelector("#searchButton").addEventListener("click", () => {
       let { results } = data;
       results.forEach((element) => {
         cardsHtml += `<div class="card">
-            <div class="card-caption">Fate kaleid liner Prisma</div>
+            <div class="card-caption"><a href="${element.url}">${
+          element.title
+        }</a></div>
             <div class="card-image">
-              <img
-                src="https://cdn.myanimelist.net/images/anime/7/81262.jpg?s=d1da71ebcaa7dfc88db25f023125e6a2"
+              <a href="${element.url}"><img
+                src="${element.image_url}"
                 alt="Fate kaleid liner Prisma"
-              />
+              /></a>
             </div>
             <div class="card-description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Distinctio cumque quas mollitia amet, voluptatum recusandae ipsum
-              quisquam eum nihil! Beatae ullam autem possimus dolor quo
-              adipisci. Dolorum omnis est expedita.
+              <p>Start Date:${new Date(element.start_date)}</p>
+              <p>End Date:${new Date(element.end_date)}</p>
+              <p>Score:${element.score}</p>
+              <p>Type:${element.type}</p>
             </div>
           </div>`;
       });

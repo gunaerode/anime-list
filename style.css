@@ -26,6 +26,7 @@ section {
   flex-wrap: wrap;
   background: white;
   padding: 20px;
+  height: 100vh;
 }
 
 .search-container {
