@@ -67,10 +67,11 @@ button {
 
 .card div {
   padding: 10px;
+  text-align: center;
 }
 
 img {
-  width: 100%;
+  width: 80%;
   border-radius: 5px;
 }
 
@@ -79,7 +80,22 @@ img {
   margin: 10px auto;
 }
 
-@media (max-width: 600px) {
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
+.card-description p {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
   img {
     width: 100%;
   }

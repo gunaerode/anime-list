@@ -19,7 +19,8 @@ document.body.innerHTML = `<div class="container">
         </div>
         <div class="cards"></div>
       </section>
-      <footer>footer &copy; Anime List</footer>
+      <footer>
+      Footer &copy; Anime Listing 2021 </footer>
     </div>`;
 
 // Common function
@@ -62,7 +63,7 @@ document.querySelector("#searchButton").addEventListener("click", () => {
               /></a>
             </div>
             <div class="card-description">
-              <p>Start Date:${new Date(element.start_date)}</p>
+              <p>Start Date:${new Date(element.start_date).getTime()}</p>
               <p>End Date:${new Date(element.end_date)}</p>
               <p>Score:${element.score}</p>
               <p>Type:${element.type}</p>
@@ -74,4 +75,9 @@ document.querySelector("#searchButton").addEventListener("click", () => {
   } else {
     error.innerHTML = "Please enter minimux 3 charcter";
   }
+});
+
+// Enter key click
+document.querySelector("#searchKey").addEventListener("keyup", (e) => {
+  if (e.keyCode == 13) document.querySelector("#searchButton").click();
 });
