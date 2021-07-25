@@ -95,8 +95,12 @@ a {
   margin-bottom: 10px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 680px) {
   img {
     width: 100%;
+  }
+  input#searchKey {
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
