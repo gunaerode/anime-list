@@ -36,7 +36,7 @@ async function getData(url) {
 
 // API end points
 const rootPath = `https://api.jikan.moe/v3`;
-const searchAPI = `${rootPath}/search/anime?q=boruto`;
+const searchAPI = `${rootPath}/search/anime?q=`;
 
 /**
  * Search API
